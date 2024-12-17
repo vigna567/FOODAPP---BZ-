@@ -1,0 +1,77 @@
+/* About container background and layout */
+.about-container {
+    background-color: #f4f4f9; /* Light background color */
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  /* Heading styles */
+  .about-container h1 {
+    text-align: center;
+    color: #6F4F37;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    
+  }
+  
+  /* Contact Info container */
+  .contact-info {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Card style for each contact item */
+  .contact-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on cards */
+  .contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Social media links styling */
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    margin-bottom: 8px;
+  }
+  
+  .social-links a {
+    color: #6F4F37;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design: Stack cards on smaller screens */
+  @media (max-width: 768px) {
+    .contact-info {
+      grid-template-columns: 1fr; /* 1 column layout */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-container {
+      padding: 20px;
+    }
+  }
+  

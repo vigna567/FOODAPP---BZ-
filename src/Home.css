@@ -1,0 +1,22 @@
+/* Apply background image to the body element */
+body {
+    background-image: url('https://images.pexels.com/photos/3201920/pexels-photo-3201920.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    margin: 0; /* Optional, removes any default margin around the body */
+}
+
+/* Keep your existing styles for .head and .main */
+.head {
+    font-size: 52px;
+
+    background-color: rgb(223, 196, 235);
+}
+
+.main {
+    font-size: 20px;
+    padding: 30px;
+    margin: 50px;
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.bxgUEkymZUu3on4iqPU0egHaC3&pid=Api&P=0&h=180');
+    font-weight: bold; /* 70% opacity for the entire element, including content */
+}

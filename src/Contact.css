@@ -1,0 +1,79 @@
+/* Contact Page Styling */
+.contact-page {
+  background-color: #f4f4f9; /* Light background color */
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.contact-page h1 {
+  color: #6F4F37; /* Green color for the page title */
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+/* Container for the Contact Cards */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Styling for Each Card */
+.contact-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+/* Hover Effect for Cards */
+.contact-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Title inside Each Card */
+.contact-card h3 {
+  color: #6F4F37; /* Green color for the card titles */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Content inside Each Card */
+.contact-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Link Styling in Cards (e.g., Email, Website) */
+.contact-card a {
+  color: #6F4F37;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr; /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    grid-template-columns: 1fr; /* 1 column layout for small screens */
+  }
+}
